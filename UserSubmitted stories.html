@@ -1,0 +1,97 @@
+<!--Daniel Guarino-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My First Bootstrap Page</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="row">
+            <nav class="navbar navbar-expand-md
+                    justify-content-start
+                    bg-primary navbar-light
+                    col-12 ">
+                <!-- if this doesnt work add bg-dark navbar-dark -->
+
+                <!-- Brand -->
+                <!-- <a class="navbar-brand" href="#">Logo</a> -->
+                <!-- Responsive Button for the smaller menu -->
+                <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <!-- Links -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="TrueHomepage.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="UserSubmitted stories.html">User Submitted stories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="TrueContact page.html">Contact</a>
+                        </li>
+
+                        <!-- Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
+                               data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Cryptids
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="mothman.html">Mothman</a>
+                                <a class="dropdown-item" href="flatwoodsCreek.html">Flatwoods Creek Monster</a>
+                                <a class="dropdown-item" href="LochNess.html">Loch Ness Monster</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+          <main>
+              <h1>User submitted stories</h1>
+              <div id="Align">
+              <div id="left"></div>
+              <div id="center">
+                  <h1>What constitutes a User Submitted story?</h1>
+                  <p> A user Submitted story is a paranormal or Cryptid encounter submitted to this website by readers around the globe. The stories submitted by the readers will be read and interpreted by an anonymous grader. If the grader feels the story is both interesting and has a significant amount of validity, they may be added to this website with the initial submitters information removed from public view</p>
+                  <h1>User submitted story guidelines</h1>
+                  <p> A User Submitted story must contain some element of Paranormal activity, if the strange activity has a known explanation it will not be featured. If a story is faked it will not be featured. If a story features extreme profanity it maybe censored or ignored. Even if a story fits all requirements it may not be uploaded to this website. There is no reward, or monetary gain for an individual who uploads their website it is purely to share their strange encounters.</p>
+              </div>
+
+                  <h1>Stories submitted by users</h1>
+                  <ol><li>Currently no users have submitted stories</li></ol>
+
+
+              <div id="right"></div>
+              </div>
+
+          </main>
+            <footer class="footer page-footer font-small ">
+                <div class="container">
+                    <div class="row">
+                        <span class="text-muted">&copy; Daniel Guarino, 2021 |  Terms Of Use  |  Privacy Statement</span>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+
+        <!-- Javascript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                crossorigin="anonymous">
+        </script>
+    </div>
+</div>
+</body>
+</html>

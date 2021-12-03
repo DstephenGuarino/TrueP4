@@ -1,0 +1,111 @@
+<!--Daniel Guarino-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My First Bootstrap Page</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="row">
+            <nav class="navbar navbar-expand-md
+                    justify-content-start
+                    bg-primary navbar-light
+                    col-12 ">
+                <!-- if this doesnt work add bg-dark navbar-dark -->
+
+                <!-- Brand -->
+                <!-- <a class="navbar-brand" href="#">Logo</a> -->
+                <!-- Responsive Button for the smaller menu -->
+                <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <!-- Links -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="TrueHomepage.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="UserSubmitted stories.html">User Submitted stories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="TrueContact page.html">Contact</a>
+                        </li>
+
+                        <!-- Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
+                               data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Cryptids
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="mothman.html">Mothman</a>
+                                <a class="dropdown-item" href="flatwoodsCreek.html">Flatwoods Creek Monster</a>
+                                <a class="dropdown-item" href="LochNess.html">Loch Ness Monster</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <main>
+                <aside>
+                    <div class="CardHolder">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="https://cryptozoologymuseum.com/wp-content/uploads/2020/09/logo-1.png" alt="a website detailing what Cryptozoology is">
+                            <div class="card-body">
+                                <h5 class="card-title">History of Cryptozoology</h5>
+                                <p class="card-text"> If you would like to learn in more detail what Cryptozoology is the following website goes into deeper detail of the history and definition</p>
+                                <a href="https://cryptozoologymuseum.com/what-is-cryptozoology/" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="CardHolder">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBYWFRgWFRYYGBgaHBgaGRocHBoaHB0cGhgZGRkcGh4cIS4lHB4rIRgYJjgmKy8xNTU1GiQ7QDs0Py40NTEBDAwMEA8QGhISHDQhJCExNDE0NDQxNDQxMTQ0NDQ0NDQ0NDQ0NDQ0ND80NDQ0MT8/NDE0ND80ND80MTExMTExMf/AABEIAPsAyQMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAEBQECAwYAB//EADoQAAIBAwMDAwIDBwQCAQUAAAECEQADIQQSMQVBUSJhcTKBE5GhBhRCUsHR4RVisfBTkiMzcqLx8v/EABgBAAMBAQAAAAAAAAAAAAAAAAABAgME/8QAIBEAAwEAAwADAQEBAAAAAAAAAAERAhIhMQMTQVEiYf/aAAwDAQACEQMRAD8A7hro80JduzQTXCapPvT5BAsXa0W6aCVqslwkwBU8ioGfimvICcASahdK3LTFGdN1Sh9sSaa7JBzpn7rRNvpdw5gU/wDwQ2WwKre1iWxyDREHYos9NcmOPmtn0DrgmZoPqHW2Y/8AxjbHmsn6hddRuIEVNSZSTC9X00kcyaHPRmWPegNT1hsQTurZ+pBk9blW+aWoxptBv+kPyMir6fRbpA5oPT9SdFIDFvegLPWnRiyiTOal5yUmxw+jZWiKgWTQQ/aMuQBk+Kb6W65X0pnyaPqQubFupssMxQbaqMGnyX9rRcXPtVNXp7Tg4APbtTfxhzYgfUyKFbVkU8ufs80SGFJdb0u4pypI8ijj0PkXS8WFQQarplgZq/4nas3nsoze5FRbuGZGKhlk4rVbU0eB2xhp9ayjJkVt/qK+KXfhADNe2VXNi4IgoTwJq6aF2PgVs19VqbXU1PAJrSmfZF3QFRJNZWLoDAVtqtfuESBQeitS80k+xrw6l4dYUZilqX1st6hmmy7Ut757Vyl1y7liZo1qBnI11PUHuGC21ewFA3XxC5+aGW6AfUaKcgRjBqXoqFLJwCwzzWWo1ReVwBXroBPJAjMVBtsVBAge8TUPRRiroojvWetsb8hq8+icHIH960WxxvO2O3amn2L8K6bRuFlnEDt5qRpZ4YKO+e1aajUFQdqBo5jNLbut3rATaeTNWkTWOrP7vpyrqdzHmatqOuOzKUI2zkA0k0zgtudN3bHHxTEaPE7SgOcDiqeoJKoa2HDvuW4R5nit200MSHDCeK50OVYbZgnIyPua0uakSSrQRQtdA8nWWvWsIxGajU33tiHUFT3pZ07rG1FRxM43ARn3p/KXbYB7djzTqaFIzmL7o7EoPkUA6QeK6VOnLbfcBhqXdT0mx94Hp7ipeZ2WtAS2jExjzV0Qj+9P1KFO0EUkHfxWelCsspcGKx2midteqYULXcVaxeHFWuoNvGaizpQqzyfNU3CYWvJA3UT0RgzEkYFU0zgg7qyTWBCQowTSy+waDupancMmEGKAtv6ZXvVGtNdaFwveihoRbG1RMcsePijXo8xIW2dKZLM3f/sUcjzknA4FYhSWUBQAMkeTTBranCgDEwPNIGAfjmSSvpMUTbQbgWbef4eYUe9Z6hNq8w3gZqRbAQHa53ckmKr/ACT2EXyvqImYJ+9J+pWWKK5JJP8ADRJvonLhuRE8fNZfi23MBoyMk4+080ZQzDT9QcLsRAo7k9601GqR1A3bT/FAwarqQN+wpu3cHii9N01YQHaomZOe9NuAiml1Vr6AQMzuzk0da1W4EhiwBk5jjgVPW9NYhMAbR62URPj5oG1qkKbLSjvIIJmOJIpcqEIulnzyXJ9O7gdxS2/bBaVkKv1QZj5rVtHfVCxUAE4zkT2FZ3ixKq21CcHbOfmhMQxtauFAVt5OD7ePvRa6i5hN22eH7g+DSYWhG1QQAZLe3tRB9cKZgcHJz2mnYDR0nTdQztsuODGOe9Nbul9BVvtXI6JwoFsr6jw/EN80/wBLrnUbLgDAY3jIzVrV6IagsZYJEn4q6ZxTDqWj2585FJQxms2nTTLUCnFe2mhxdPerfimnB1GUkiskUzmiLbDFV1LLuEfpWWn2HqNbtsbDGKT2LckDyYpzrCwQQMGg1CKVyZOR81S6FRv+Clobcs5WfYfPil+l/EII3AkznkCsTaYMxdjLcz47VooCKdjT4A896jWqx5Rd7LLn6iOT2mr5X1FPq5bAHyKG06s5hmIUHtzNGNsEK3qbsCcx5ihDZhpr6+r0M043Hx7Vsw/hCABuCT4rRbgySIAgA/8AeKsrK2OY7gx+VC9GK72ldYhUWccTVmBiAiIQpyePkUcU2rhCV+qQQDn+HPNK7mtA5U/B9RiOCBxWibZDRkdJfcepxtIGcHjsG7H2razO5VPiN+CPy/rRBuKv07hyQo4+Yrz6pFhjLNn1R57R3FJ6fg0jD96Zn2hA+0E+oQoEfVPehjqrzRsQREDaMEe9Ftp2A3i6UBWGnk94A7CqbEtKWFyDHoPbjIHaqT6FClu3tG93dWzjMQPFYPpkeXJgk+ncYPzFYW9c7uN434iB/wAwKLv6iyHDOrTHdSIik1AAzb/DH/1obsBlSPFMbWoKhI3MSckdh2obTObrSgQESDIEETiKhNKysWnanDKTk9vR4pgOH1SvCukqOWGGx3itPxVtnDt6ogcg/NDABAE8RtmZK+9Ta1pVtqoGwTDDHgwaXLsIOxrG2EMhjmDnHlaXvbn1KIHvW9l9jggFlKjcOSn+KPt6lXfY4XIlGHfHB96q0nwSfhE5qNntRmsTY2OODWUUdlVCtQzcd6Id9i7QAW80r1OsdSF2keDWb6lwQD3zJ5rPSf4NQd2tTKEMRjIHvQdy+S0NsVmAgd/tVk1KMpztJ7f1rNdCPxAwJLAR5EHvU3+j4/wjWqy5dyV498Zq9m8hWcISOXmPkf7q9e6cEYhn/EZjIE/SfmsNVaVz6wRtHpEEqO3A54pJoJ0EaDUAkuJ25UboBb3AphdsSNxT14HqPq47AdqT9Q6l+7oiqmx2UlSRiPMdiaQXuq3jLKzrIHfM9zPYVtnDZD1DrLupdAFKsJmfTKwfJrEBQNh3qA3qIIiSea5uzqncqHLbp5Jn09jHc1v1XQ3kP/yow2kh2JlWn6ciq+slbH2oUgmHYnkZMfHisLDsxBIYKZl09e3P0kUo0XUoKq+4AAqoUTB/3eRTLT9RRd2y4VMyREAnsQPep4vJdoz0twg/wNkjI2H5zQ7qr703y/ABA5jsfFUW+7AllR+8EAEfANL7oCgNtA3TxG4f2qV2xs8bbb4LbcqSOcryQKZ3NSjjcWJVDkGBP2NLjqWMHYpVQAJBn3k1Z9CpJ8HOwSQPkmreck0O0uoRGOz6mODjtnE9qqym5IIDsDOYjHxVtP0t2O1AGeJ9ZgL/AIpunU9JpCy7gzkEsV9QDRG0H+tJZochNrbKW0L3Dtcr6EAIJnuF7ihU6ihtLILY+oQpB4x3igb2sul95GWG5WZcbfCE4I+KBCTBJ3ZYwDAH51oskPQ+02udUBf1rxu5YCOKLsX0YHbO/OCYOPfiuWshuRCjsAxkn3FMdFqBv23GOWWCQQwbxI7Gk8oOTOq0NxggDEK7SMDkEZVqjT3wXnb67XpyCpPj5qyo6Nut21xD3AuQ4JHqTyKNvXVN1kcRvAa23cmJ2n4o4wLQrUNvto236uT4il/7uaavd22tryvx4ob95s/z0/RHCXuqDYvdo5PatdO6XY3H1x24oHXW12TIz2HzQqXUVpBKmKlLotsOtqDdgg7U+qOYo9LkBiCyzIMnkE4jxSTp+tKbnB+qQZpjproZHdoaCPSfFS8oaYSbqrtQiXBkQZkfPc1h1beku/pEKwUGWiYE+BQ3TAHuMziAJZYBwv8A3vROqTcysjAzDAHghDJU/aksqhXBLqNS9xzJLQSBuzAHb3FQ/UFVtuXmAewHtWnWFUXHZJG71R2znFJFPt7HzXRlQzbOpbpha0L20qhPpcN6S0wBPIyK91Tqly4yNe9aINpVTsLAHuR396TXepubIsb2/DGfw8bZ7R7g5rV2JQEj+FTHeRRoSCn6c4J27Iw0bwYU5UEjkwc1ezaRXQ3pNlifUn1GBjbHvXulXGQLsZQckrE7myMz7dq36Uzuty3skGWIP8JOCF++fvWetGmUdLo+ktcQFDvHIJK71XsHAMlqD12idVJdG2iDu+nbOMzU9A/ZzUZ23VWOxJ3ATiCOK6R+l6yNv4qOv+6ZHfJjNRlJ+A2c7Z0rtGxC24hfZZP1eSAM1ve0qWrhTUGQ0qoRpdu4mMp96eN0rWHm/bAAgAAx8nGTSPqH7H3GDMbiOwkkAsGbyAYq4oTRH1j9owZTThkEFW3EdsTumaTWFUuu9iqSN7bSWCHltvk+KZX+jNZWH2q/CgZncePc1XpNh2L3HTfsADBztBE8ggduaFrP4Dyyep64XDsthls2/SgbL7eGI+fFa6PQte3Cwgd0EvMDaPYHk0s07j1SwYb/AKh39880Ja1r23dkZ0JLAkGCQeQfNXl1iZe7q3AMEMFMTEHFa3b+5QxG6QTPx2NKrz5nifOP+KZ9J0hfakQCwkn+XuBVNdip9L6deCW7YnIRWHsp7HzBNbXNtzajr6mkh5gqexrnOt3wtv04YBUWP5ZEz7YrbQ9RR7KHftccTiSO1RplZydaqDbscywwZ70N/pqfyikmu6rKBjCXcA5lSDgcdxS79+uf+RfzoqCMUaq0iOcfastV0/O4DETW/VFLMXiO1bWdcyqQVkMI4mKzTL4iFyFx71pYdAjb90mdoHee1Rd2jJ5qlo+oEekA7vOYiKsQx6TqCjlQSodQreVB4o7qlhgCAIkAhu0rj8jS13Unef4iJ+wECui02lW8hWZG4qrk8DaGj3yTUPp0Pw5vUWywGMxn/FK30QkwPmcUxLlGKOSrAxOf1oqzcQsPxnKJB3OBuz2Ee5rZa7IaEf7mCRuEAZxJJ+Ipx+5MyKXZLaEETMsfAgZrC9cZVDwDPvwZgY9wBW2msbwrI6iMuWxB8Dz9qWmoCRvasI9pFZSjgEIVDFm/+7HPtTbonTtitccjMgTyY/iPjxT3oGm/DtM7+q4ThjECeGj+agdZolZWDSWInmGA54Fc+tJ9Guc/rDLV5lQPsXwIM4qU1xD8gLHv6mJrkrHWLqFlLBRkBWXt2A7zTfpepZ1XeNvdCR6T71GsvKqZWWmx1+M/EzOcHEfesL2ocgHZtXMn471jrrjIgKGWUeo7SQO8mOBXM3OuXnEFzExgcwY+IpZWtKsenleHU3AhUE7BIYE8gY5HfcaCuaAsisQ+2ATCgAx3JJj7UOLDPbClSjkDPK/YDvFONDqnS2LfpdSIKtMT3zEimpn1k6TfhxOttMzu7enO2dhCED4wDQr6ZWgttkcGTB/zXR9V0Z2KWKhg04YxnkEeaT660UZivrt4KkxMd93vXTjeWujLWX+iwooYGM+2T+VM9ONvrc7VEQvcn4rM3AUV0ABkqQB3Hk1nbtlzJPaR/irehJDbTXDcLEj/APkZpVfIXc4Eg8KcfcV1/TNBs05ZoBuYz79prk+qlSzeF9IgYIHao9ZRDX2FrLSCZA8ffmgt3+6qJqmI2RAHGBVfwV96cFTuNLdtPK3GCiMTSrWXTbBKOCMwIpU+VDbwT/LWiKkSQY+azWeJpyoG9yZOM8/4qqNFGXHUiNvFAXFHINX6SwhL6tCt2M0x0WrVFCsWjfIA4yAJ/SkD3gfb3onR6g5DeofqKITTpmKX7hW4FDrJRxA3AfzeTSzVdOZF3I4ZGMEMYgn5rzhHQFGz380LdyNryIjae1CYPo2s9PBn8W5DHiMwPIpz0Xp1tQWRyTMngx+ePtXPX77sNvIURIGSDTXpV3ahnC7pJ74rL5E50Xj064ZkI5ZVH2J7msNOCbo2cREsIBPkmZobQa30mD6FxuUZz7Vnf15C7UgbvVLH1QT38Vz5y6bN1BF7pg3slwB3ZCBOApmd4PfGIrfRaVCSUQAQFC7pAgZjxJzSvU6wF0VT92kiY4JHmmHS7oLBHlBtDMsHn+GPEmtNZ010TnWV6FXAyK6qQFcQQe4jkH+alWl0KoVLkBsgo0QM9j8ZonU6wpuRwUEEy4ME+0flQGr6i+1GdAQwO0KQWkYDHuBSznaUG9Ybo3Qsg2sVz9MniDwT5ir3WVJdvSCDCng+9Ik1lxmVX9KzMtHJ7UW978VWMglcyxgCOwrPg72Pkp0ZHW2rkoRMcA4/LzSY2bbtuSUIbbAPpb3g8UPpuoidpXgYx6p96NOhcOu2FViGlux7V04xxMtaTBbiOwezt9W4HiABHtTLp3TktsrOdxwFn6VP9arf6oqMwHqfhjEAmlfUuonLMAOAqz37mtl/DIa/tP1pSERcRJOcEzyBXH7y7E5/PE0Pevbmkk+BV7DZNESCmqLJoz8L3obTuP4qL3rRBlEsGZ2svvRiIGGWiuqt6VTgoOefNbN0VD/Dms9fIl0VnLOUs2FUSxJEYpRqRBMGu81HQFjANcZ1fpxRu9POkxaTQsc1QvFQWqCK1hnSy3yCCJn2/rTKz1MNi4PuMmk5NTuoiKp0GlvqG3Iwb2OD8RRuo6jK7BbUA8kmuSBzV01Lz9TVLzQWodxpepIiQAd4zA4J80u6jdJhiwBbJJIPB4gcUgTWuM4qz9RJ5FSsdlc+h43UXiJXkEkjmPAroej9YhV2EFyy7yRPHGTXBp1AD+EkirjqjgEIsTz37zNVpfwSaPoPU+tMzkahFdUHpQCPURhmPiuUuX3DSG27sNGQe8DxSt+qER6t574jt+tZnqZMDb+WKFYJyjt7a3CAHcmPyiqjqRELB3LKgng/Pmk69RA4Q/nWL68k4UL80uIUYnVszEiJ8ipfXNkliWOPilW9j8VKX2WRiqChqaps7Vk9yaAv7pO7mp/enH+Kxe4SZNNIKTNWstmazDVeceKBGwatJPmos2ScfrVv3I+//qal6Q+z61e0Z/vVtPIHBo574Ag/eg7uqVeftFcT7Orw1k+a5/rmgDyfHNNd5ee36VDWCywD+dGegaqPlXUdLsbjE0CW96+hdT6HuBlCfcVy2u6UqKcH711Y+ReHNrDtEoFVIrQCMVBFbemZSKqBWkVNIZSvRUrXqAK7czVg0VMVBFAFd1WFVIqwoAiM1PvUVY0ASjGrHNVXipR6TQ4eA7V4+KliCfFSiyeO9PwCPwZonT6XIo/QdGuP6yrKhxuIxT7T9G2kEDcMT71nraReck9J6QH+nmPtFOv9HHj/AI/vROmslDHpE/YAeCaO/A/3J/7Vya+R03WVDTWLJA/T+9CXrbEycRjjFHfgkMJOYz4o2+AwiKlsbQl2+MxXncwMT8Uzu6MBfTPxQRIg7QcUUEUt3vt7HxWHWOlI6wFz5raTPYg+aMa8oAC+rHNFaY6fKut9HayZjFJAhr61rNKHB3AEGuK6z0Bl9aiF9q6vj+S9Mw3n+HMNWcVtdslSQQayNbJ0x8PLXiYqd9eOaKMpuqVavFQK9NMCQa8a8K81Ai0V4mvAVfb7UAZg1AitFQ96M0+hdj9P6VPJFRmWm0xfEeK67R9Nt25dwGECB5NAdN6dBEsBJg10ek6Ogku5JBELyCPtWW9F5zQe3vvEKTtQfwDvGaO1LFFBYgERkz6V4Eij9qoG2LHaeY9waQdT1IeBuJGQT58Vms300sDrOqgouDk5gwx7famWy/5tfn/ilXRLDld9xDsTCj+b/FN/3dP/ABj/ANjWekqV2O3uEj6RQq6ogkGK21F9mHp9Pk0ONMzHH5kVA0+jU6okmDjuMVgjnJwQe3eiF6ZjLT5rT9yVcgmaG4FPXNCuyQYxP+KSMxHCkntR+oL5XaTHehlRomCY/SnyommjJJJIJjyK8lzcpXEeao7kGSM+ahdRtOAD5imiRR1HpCOTAE1zus/ZlxJEGu8ZgW3RE/lVAQcLWmfkaJeT5bqOmXEyV/Sg2Q+D+VfXXsKyhWAmcHz7Gh9R0q25KlFgDbI7+TWi+UngfJytRsr6rf6BZcD0LgQDxAoZP2bsgQFMic9jVfcg+tnzRUM1swHHevoy9Cs7/WhgDIBA5xVn/Z6yOEx570fcg+tnzlUJ4Bo3TdLuPgKc96+mW+mRbUJsBzJYCYnAHk0Ta0aIuTHY8ZPtHFTr5hrEOW6F+yKfVebheJoxtCbjhE2qiYLYBC93948U8lGYKRgcjjipTpSBs5XkqDGO0nsKzzuusvWf89HNdQZFAWyk7ebgn1j2XsKf6LSG4m4eglfvj2q/VQWYOqgBBCKoAj580rXqV1XBOMQJxNVtrT6FhRBHUrJVIRy20S+fz+9LNDpw4+nczn0L3gdz4ra2d+8zs7kdo7mlzauCSrFZwMYj2NVmwNQfpcZECsCAo+le9B/6sv8AI/60NpbzOqnaxCHkTJ9qYfvQ/wDC36VnwHWdld1CgTtn4FYJdDGJI8xigrbNDkv8Rx/mr4HBkwJbtPvWCZXFIMJUH6sexqVU9qyS2DLSP6Cri/t+rPwKTCA+pdgf5R+p9qFVm3DYCxxicfej21KEyZGO9CXXGCkgDnsDSSYUFu6di0mP/wB9qk6FhyAFPitVcqCAZnsc1ZLjsORA7RVNtDhnc0jKARBXv5FU/DPAhRk55Ne37WIg7TzPP2qLFtnk9v8AvFNaCEXAd09sdhFRbuop8mcURbOw5EiIjmanULIBCAfPPtT5BD15t2SBiq2LG4bi+0ePPxQb3HzimGg0qMADu+O00Nhpmer0ySu1tzMeeeKFuJtOceRk10J6eAIT0/FDuhQxtB9yajk6LLT6Qka2G4x4E1U22TwZ5psXg7mRfYgUv1t8EllQnzHc+BVp0IW04Uy0GcQRwPtWjuADJ5zJxNe0V9gu3ZLR9hW41MkBgsjnHFK9jlJtWFdVfcTHj2oDqemRgA0MZwBg/NM7dxQx2SO5BwD8Ut1KsW3naPse3cGjOnQfhzWssOgZR9DYJ7jOBU3m26e2CVJ/Ef0R6gIwZ8V0TqrLtcQDyfIPeqL062IXBCkkM315+kfFdGfkiZk81gfSbbghwqohWIMz8gUZ+6n+d6LulUIBIJHFa/jH/orB7dNuKGV5VjgQKFbTqAGED78/NWtLuPhTkDv817Ws23aqz79hUiSa6MdxExx3/wAVa3ZGTuOe01VLpghsRz71eyGYkqu3t8iprvRenEYai0e4JHt/WhrWSVknGPjxTq4Sq+cd/wCtK3Rj9Mhjk+KukJXsoiqpEkyO1FazUuI2wFPcZP3oJHMyxn/n7VF98wRCnt3imlQ0yBc5MmT5HNE2LZIG0RGB5n4rAAH4jvRGkubZng9+TNLX/ATMihBg8+1akDMtyB80RduI/ZpHcYn5rJgFE8MOBz+dSnQVB7l7A85zFO+lQUE8g5pGx3cgH4xRVrUPK7CB3IjJx807Bby2PHcg0o1+mZnMwMYPis26hdkn0jwCM/ahbl+R6mIn3yfNNInGXl01tatreCyuvjvPzWbasu4ULsUnMZ+9LUKseJA4/wA1qHyfTA8ycVSRUvY1v9QRNqrOMcDP3oPValH9UlTgR5oW9bEyeJwOxq9kjIIz2gYFKDShcgYyZ7Z/StBZcQBwR8j3+K3tW7ZXJ2t3g/rkUQEHKsSQAI7ffzSbngfoF/p7s30+O8Y5qup0br6iBz5/xV71x2Lbnx7GPtFDNfKwJJB5kk1VooVF8CC2O8gTUfvo/wB35US6bQG/m4PYfIqP3n/eP0/tREFDdn0wZxHMVpaYGeZ+aERYzAjxmq25VmkxiPcVLyUn2HBFK/Pmsm1TKdoJO3uapbUv3+n9aKTSFpkyvxFIbn6V/flImZPcVhfy0gnbHH9qi9pgjAgfb+9VuX3jK/2oQdToyXTwPSCT2moQEESokfzZo2xrxtA2w3ir3gWAO0A95pNkpUqqEJ69pJ4jxQyIxaIAxMTir/vLLyRA7Cgr+oJMgenuTg1WWDUGtsFe3qI4+P6UPcfeIPfsMGqI8xJ7YM5+KvZtu3cLn702kCZdFCiYk9xU6SyxMsQQe1V1Zgfp96xS64JAO2OR3qJRtm2q0H8pMe5pa+kJeD9PcxJHxRv4rwSDIrKxqWLmM/8AFOQF2ZKFRSDBAODEE0y0VxXPrRf9sf1oe/DESgZjz4Hg1RLBUjdwfHIoWgeRvddAJKY+OK5n8UFyVYgTxTzUWjsgGR7ntXPabR7HlSSZ+kiavOhcZ4GluCc/aidK5Y7Q8A94/wCauLT7fUCBMxgDNCXrbGB2/L/ilUwlC7mkVWABLH4x+dYHQNv3AKR/LMR8+1E6KyykerEcc/nVWuFDDyJnxH96SH56Dam7ICsAACZgkifahtqef/xqL1uMxgHGeTVc+T+lVxM+R0LWV2+/mg10LbgQTB+osZq34p/EUTjxVL9wyc96mmrX6MregCZTnvW7XGETn4rTTfSK12COKNGHK+i/UEGR5/7ihUCkFN0wO/NGagVjbtLBMCayWnTdTiBWdOWBYOABjHNbradgCTj/ALk0Lcw8UTp7rbOfNafhK9MdbpVBBmPJof8ACE8kjt4oq5QtymvBs8iL5j5ohLBDCWx/Sgmo/p2SZqW+gSNr1kYBIIM596yNlTAkUayCOKA6gvFJMpJGVxWGYx/zRVsmBCAT3xS7T3D+JE4jiiVOarRSygp7J5mPiqLZg+o7h71Oncwc9xXtO5JYE96j9EVdxPjHmqq6Hbkg447/ADV76Azit7VsAjFaNdEmOudj8UHuPDGjtTz9qJWypBwKWWJ9IysMtpRulppd1PWBz6VAA4qdTz96BTL/AHrVeENdk20PzPzV/wAA/wAv/NNNR/BVqXIaR//Z" alt="a website explaining the frog">
+                            <div class="card-body">
+                                <h5 class="card-title">Lungless Frog</h5>
+                                <p class="card-text"> If you would like to learn more about the lungless frog, a creature now proven to exist click below</p>
+                                <a href="https://www.newscientist.com/article/dn13605-worlds-only-lungless-frog-leaves-scientists-gasping/" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+                <div id="Queen"></div>
+                <h1>Home</h1>
+                <h3> What is the purpose of this page?</h3>
+                <span class="king">The purpose of this website is to educate the public about various Cryptids. A Cryptid is typically defined as a creature that doesn't
+                have enough evidence to prove or disprove their existence. These creatures could be something unusual like an unknown species of cat living in an area said to not have large cats, or could be
+                something scientifically unusual like an extinct species or a species that defies known science. While Cryptozoology has led to the discovery of unknown species(the discovery of a special lungless frog) it is often times painted as a Pseudo science due to the fact the more astronomical side of Cryptozoology is exposed to the public.
+                This website would like to inform the public of several, different Cryptids and teach them not only of various creatures supposedly seen in the world, but also convince them that even in Cryptozoology's more unbelievable parts, it can still provide an insight into what the human mind is capable of. We also want give the readers a sense of adventure as even if we explored the vast majority of the land, it is possible somethings still allude our grasp.</span>
+                <h3>How should readers take the information they read about Cryptids?</h3>
+                <span class="king"> Usually unless proven to exist, or to have once existed, a case could be made both for and against the existence of each Crypid. This Means that is important for all individuals to carefully examine the evidence that they are given and make a conclusion on their own. Taking this mindset will help prevent Cryptozoology from becoming further fictionalised and help individuals from falling for faked evidence. It is also important for individuals to have an open mind as they could be proven wrong, but they may also craft their own theories that turn out to be true.</span>
+                </main>
+            <footer class="footer page-footer font-small ">
+                <div class="container">
+                    <div class="row">
+                        <span class="text-muted">&copy; Daniel Guarino, 2021 |  Terms Of Use  |  Privacy Statement</span>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+
+        <!-- Javascript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                crossorigin="anonymous">
+        </script>
+    </div>
+</div>
+</body>
+</html>

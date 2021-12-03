@@ -1,0 +1,138 @@
+/*Daniel Guarino*/
+.card{
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+
+.small-space{
+    padding-top: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+
+
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: aliceblue;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.5rem;
+}
+
+
+section {
+    width: 50.625%;                  /* 525 / 800 X 100 */
+    float: left;
+    padding: 0 2.5% 20px 2.5%;       /* 20 / 800 x 100 */
+    border-right: black;
+    border-bottom: black;
+    border-top: black;
+    border-left: black;
+    border-style: solid;
+
+    background-image: -moz-linear-gradient(
+            30deg, #01d4ff 0%, #01d4ff 30%, white 50%, #01d4ff 80%, #01d4ff 100%);
+    background-image: -webkit-linear-gradient(
+            30deg, #01d4ff 0%, #01d4ff 30%, white 50%, #01d4ff 80%, #01d4ff 100%);
+    background-image: -o-linear-gradient(
+            30deg, #01d4ff  0%, #01d4ff  30%, white 50%, #01d4ff  80%, #01d4ff  100%);
+    background-image: linear-gradient(
+            30deg, #01d4ff  0%, #01d4ff  30%, white 50%, #01d4ff  80%, #01d4ff  100%);
+
+}
+section ol{
+
+}
+
+aside {
+    width: 28.875%;                     /* 215 / 800 x 100 */
+    float: left;
+    padding: 0 0 20px 2.5%;             /* 20 / 800 x 100 */
+    border-top: black;
+    border-bottom: black;
+    border-right: black;
+    border-style: solid;
+    max-height: 99%;
+}
+
+aside img {
+    /*float: left;*/
+    max-width: 50%;
+    min-width: 50px;
+    margin: .5em 0 1em 1em;
+    border: 1px solid black;
+    max-height: 20%;
+    min-height: 50px;
+}
+
+
+article{
+    width: 20.875%;                     /* 215 / 800 x 100 */
+    float: right;
+    padding: 0 0 20px 2.5%;             /* 20 / 800 x 100 */
+    border-top: black;
+    border-bottom: black;
+    border-right: black;
+    border-style: solid;
+    max-height: 70%;
+}
+ul{
+    padding-left: 80px;
+}
+h1{
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+.king{
+    line-height: 2;
+   max-font-size: 20px;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+#Queen{
+    padding: 1%;
+    max-height: 70%;
+}
+#left {
+    background-color: black;
+    float: left;
+    max-width: 20%;
+}
+#right{
+    background-color: black;
+    float: left;
+    /*max-width: 20%;*/
+}
+#center{
+    background-color: white;
+    float: left;
+    border: black;
+    border-style: solid;
+    /*max-width: 20%;*/
+}
+#Align{
+    margin: auto;
+    text-indent: 50px;
+   /* margin-left: 45%;
+    margin-right: 20%;*/
+    /*max-width: 30%*/
+}
+new{
+    border: black;
+    border-style: solid;
+
+}
+main{
+    float: left;
+}
